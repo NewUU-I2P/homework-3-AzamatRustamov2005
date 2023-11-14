@@ -1,16 +1,16 @@
 #include <algorithm>
 
-void problemSolution1(float consumed_water) {
+float problemSolution1(float consumed_water) {
     float cost;
 
     cost = 13;
 
     float t1, t2, t3, t4;
-    t1 = min(30.0, consumed_water);
+    t1 = std::min(30.0, consumed_water);
     consumed_water -= t1;
-    t2 = min(20.0, consumed_water);
+    t2 = std::min(20.0, consumed_water);
     consumed_water -= t2;
-    t3 = min(10.0, consumed_water);
+    t3 = std::min(10.0, consumed_water);
     consumed_water -= t3;
     t4 = consumed_water;
     consumed_water -= t4;
