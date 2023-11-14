@@ -16,8 +16,8 @@ std::string problemSolution4(const std::string &macAddress) {
     if ('A' <= parityDigit <= 'F')
         is_even = (parityDigit - 'A') % 2 == 0;
 
-    if (typeA) result = "Broadcast";
-    else if (typeB) result = "Unicast";
+    if (is_ff) result = "Broadcast";
+    else if (is_even) result = "Unicast";
     else result = "Multicast";
 
     return result;
