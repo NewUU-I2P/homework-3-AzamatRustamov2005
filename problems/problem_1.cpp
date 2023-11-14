@@ -1,3 +1,5 @@
+#include <algorithm>
+
 void problemSolution1(float consumed_water) {
     float cost;
 
