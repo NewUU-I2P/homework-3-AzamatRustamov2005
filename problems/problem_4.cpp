@@ -11,9 +11,9 @@ std::string problemSolution4(const std::string &macAddress) {
     }
 
     char parityDigit = macAddress[1];
-    if ('0' <= parityDigit <= '9')
+    if ('0' <= parityDigit && parityDigit <= '9')
         is_even = (parityDigit - '0') % 2 == 0;
-    if ('A' <= parityDigit <= 'F')
+    if ('A' <= parityDigit && parityDigit <= 'F')
         is_even = (parityDigit - 'A') % 2 == 0;
 
     if (is_ff) result = "Broadcast";
