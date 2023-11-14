@@ -6,7 +6,7 @@ std::string problemSolution4(const std::string &macAddress) {
 
     bool is_ff = 1, is_even = 0;
     
-    for (int i = 0; i < macAddress.size(); i++) {
+    for (int i = 0; i + 1 < macAddress.size(); i += 3) {
         is_ff &= macAddress.substr(i, 2) == "FF";
     }
 
