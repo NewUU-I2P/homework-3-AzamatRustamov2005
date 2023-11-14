@@ -3,12 +3,12 @@ void problemSolution1(float consumed_water) {
 
     cost = 13;
 
-    int t1, t2, t3, t4;
-    t1 = min(30, consumed_water);
+    float t1, t2, t3, t4;
+    t1 = min(30.0, consumed_water);
     consumed_water -= t1;
-    t2 = min(20, consumed_water);
+    t2 = min(20.0, consumed_water);
     consumed_water -= t2;
-    t3 = min(10, consumed_water);
+    t3 = min(10.0, consumed_water);
     consumed_water -= t3;
     t4 = consumed_water;
     consumed_water -= t4;
